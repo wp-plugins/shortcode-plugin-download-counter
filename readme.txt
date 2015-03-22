@@ -4,7 +4,7 @@ Plugin Name: Shortcode Plugin Download Counter
 Donate link: http://www.soundwaves-productions.com/soundwavesblog/wordpress-plugins/shortcode-plugin-download-counter/
 Tags: plugin download counter, plugin stats, statistics, developer, plugin counter, how many plugin downloads, plugin downloads, number downloads, total plugin downloads, counter
 Requires at least: 2.8
-Tested up to: 3.1
+Tested up to: 4.1.1
 Stable tag: 1.0
 
 This plugin makes it easy to include a `plugin download counter` on your posts or pages by using Wordpress shortcodes.
