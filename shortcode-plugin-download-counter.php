@@ -9,11 +9,11 @@ Plugin URI: http://www.soundwaves-productions.com/soundwavesblog/wordpress-plugi
 function PluginDownloadCounterShortcode_call( $atts ) {
 	extract(shortcode_atts(array(  
 	   	"pluginname" 		=> '',  
-			"regexp" 		=> '/<strong>Downloads:<\/strong>(.*?)<br \/>/'
+		"regexp" 		=> '/<meta itemprop="interactionCount" content="UserDownloads:(.*?)">/'
 			), $atts));
 				$c = curl_init();
        curl_setopt($c, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($c, CURLOPT_URL, "http://wordpress.org/extend/plugins/".$pluginname."/");
+        curl_setopt($c, CURLOPT_URL, "https://wordpress.org/plugins/".$pluginname."/");
         $contents = curl_exec($c);
 				 curl_close($c);
         if ($contents) {
